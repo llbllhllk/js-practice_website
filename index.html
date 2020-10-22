@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
   <meta charset="UTF-8">
@@ -8,11 +8,13 @@
   <meta name="description" content="Portfolio for Kangbyeonghyeon">
   <meta name="author" content="Kangbyeonghyeon">
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="./images/kangbyeonghyeon.png">
+  <link rel="icon" type="image/png" href="./images/logo.png">
   <!-- Fontawesome -->
   <script src="https://kit.fontawesome.com/98a425b916.js" crossorigin="anonymous" defer></script>
   <!-- Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
@@ -20,20 +22,25 @@
   <nav id="navbar">
     <div class="navbar__logo">
       <a href="#">
-        <img src="./images/kangbyeonghyeon.png" alt="logo">
+        <img src="./images/logo.png" alt="logo">
       </a>
     </div>
-    <div class="navbar__menu">
-      <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Skills</li>
-        <li>My work</li>
-        <li>Testimonial</li>
-        <li>Contact</li>
-      </ul>
-    </div>
+    <ul class="navbar__menu">
+      <li>Home</li>
+      <li>About</li>
+      <li>Skills</li>
+      <li>My work</li>
+      <li>Testimonial</li>
+      <li>Contact</li>
+    </ul>
   </nav>
+  <!-- Home -->
+  <section id="home">
+    <img src="./images/profile-image.jpg" alt="profile image" class="home__avatar">
+    <h1 class="home__title">안녕하세요, 저는 강병현입니다.</h1>
+    <h2 class="home__description">프론트엔드 개발자라는 꿈을 향해 달려가고 있는 컴퓨터공학과 대학생입니다.</h2>
+    <button class="home__contact">Contact Me</button>
+  </section>
   <!-- About -->
   <section id="about"></section>
   <!-- Skills -->
@@ -43,7 +50,7 @@
   <!-- Testimonials -->
   <section id="testimonials"></section>
   <!-- Contact -->
-  <section id="contact"></section>
+  <footer id="contact"></footer>
 </body>
 
 </html>
