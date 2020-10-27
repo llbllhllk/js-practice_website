@@ -104,6 +104,7 @@ h3 {
   margin: 0 4px;
   cursor: pointer;
   border-radius: var(--size-border-radius);
+  transition: background-color 0.25s ease;
 }
 
 .navbar__menu__item.active {
@@ -126,6 +127,7 @@ h3 {
   height: 500px;
   border-radius: 50%;
   border: 2px solid var(--color-white);
+  margin-bottom: 30px;
 }
 
 .home__contact {
@@ -136,4 +138,43 @@ h3 {
   color: var(--color-white);
   border: 2px solid var(--color-white);
   border-radius: var(--size-border-radius);
+}
+
+/* Section common */
+.section {
+  padding: 50px;
+  text-align: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* About */
+.about__majors {
+  display: flex;
+  justify-content: space-between;
+  margin: 80px 0;
+}
+
+.major {
+  width: 33.33%;
+  padding: 0 30px;
+}
+
+.major__icon {
+  width: 170px;
+  height: 170px;
+  line-height: 170px;
+  margin: auto;
+  font-size: 70px;
+  border: 1px solid var(--color-light-white);
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+
+.major__icon i {
+  transition: transform 0.5s ease;
+}
+
+.major__icon i:hover {
+  transform: rotate(360deg) scale(1.1);
 }
