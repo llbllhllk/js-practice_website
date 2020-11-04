@@ -116,6 +116,16 @@ h3 {
   background-color: var(--color-dark-grey);
 }
 
+/* Toggle button */
+.navbar__toggle-btn {
+  position: absolute;
+  top: 55px;
+  right: 32px;
+  font-size: 24px;
+  color: var(--color-white);
+  display: none;
+}
+
 /* Home */
 #home {
   padding: 40px;
@@ -371,6 +381,7 @@ h3 {
 .testimonial__speech-bubble {
   padding: 18px;
   border-radius: var(--size-border-radius);
+  background-color: var(--color-grey);
 }
 
 .testimonial__speech-bubble .name {
@@ -391,4 +402,55 @@ h3 {
 .contact__links i:hover {
   transform: scale(1.1);
   color: var(--color-yellow);
+}
+
+/* For below 768px screen width */
+@media screen and (max-width: 768px) {
+  /* Navbar */
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar__menu {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    display: none;
+  }
+
+  .navbar__toggle-btn {
+    display: block;
+  }
+
+  /* About */
+  .about__majors {
+    flex-direction: column;
+  }
+
+  .major {
+    margin-bottom: 38px;
+    width: 100%;
+  }
+  
+  /* Skills */
+  .skillset {
+    flex-direction: column;
+  }
+
+  /* Work */
+  .work__categories {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .project {
+    flex-grow: 1;
+  }
+
+  /* Testimonials */
+  .testimonial__avatar {
+    width: 80px;
+    height: 80px;
+  }
 }
