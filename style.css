@@ -91,11 +91,20 @@ h3 {
 
 /* Navbar */
 #navbar {
+  position: fixed;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: var(--color-black);
   padding: 16px;
+  background-color: transparent;
+  transition: all 0.2s ease;
+}
+
+#navbar.navbar--white {
+  background-color: var(--color-white);
+  padding: 8px;
 }
 
 .navbar__menu {
@@ -136,6 +145,7 @@ h3 {
 /* Home */
 #home {
   padding: 40px;
+  padding-top: 120px;
   text-align: center;
 }
 
@@ -232,14 +242,16 @@ h3 {
 }
 
 .skillset {
+  border-radius: 30px;
   display: flex;
-  background-color: var(--color-yellow);
+  background-color: var(--color-black);
   margin: 20px 0;
 }
 
 .skillset__left {
+  border-radius: 30px;
   flex-basis: 60%;
-  background-color: var(--color-blue);
+  background-color: var(--color-black);
   padding: 20px 40px;
   color: var(--color-white);
 }
@@ -266,20 +278,30 @@ h3 {
 
 .skill__value {
   height: 3px;
-  background-color: var(--color-orange);
+  background-color: var(--color-blue);
 }
 
 .skillset__right {
   flex-basis: 40%;
-  /* background-color: var(--color-light-white); */
+}
+
+.skillset__right .skillset__title {
+  color: var(--color-white); 
 }
 
 .tools {
-  background-color: var(--color-orange);
+  border-radius: 30px;
+  color: var(--color-white);
+  background-color: var(--color-black);
+}
+
+.etc .skillset__title {
+  color: var(--color-white);
 }
 
 .tools,
 .etc {
+  color: var(--color-white);
   padding: 20px;
 }
 
