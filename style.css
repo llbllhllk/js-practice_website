@@ -100,6 +100,7 @@ h3 {
   padding: 16px;
   background-color: transparent;
   transition: all 0.2s ease;
+  z-index: 1;
 }
 
 #navbar.navbar--white {
@@ -199,6 +200,10 @@ h3 {
 }
 
 /* About */
+#about {
+  padding-top: 120px;
+}
+
 .about__majors {
   display: flex;
   justify-content: space-between;
@@ -238,6 +243,7 @@ h3 {
 
 /* Skill */
 #skills {
+  padding-top: 120px;
   background-color: var(--color-white);
 }
 
@@ -306,6 +312,10 @@ h3 {
 }
 
 /* Work */
+#work {
+  padding-top: 120px;
+}
+
 .work__categories {
   margin: 40px;
   display: flex;
@@ -411,6 +421,7 @@ h3 {
 
 /* Testimonials */
 #testimonials {
+  padding-top: 120px;
   background-color: var(--color-white);
 }
 
