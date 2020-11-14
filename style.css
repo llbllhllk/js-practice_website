@@ -571,6 +571,11 @@ h3 {
   #navbar {
     flex-direction: column;
     align-items: flex-start;
+    background-color: var(--color-white);
+  }
+
+  #navbar.navbar--white {
+    padding: 16px;
   }
 
   .navbar__logo img {
@@ -583,6 +588,10 @@ h3 {
     width: 100%;
     text-align: center;
     display: none;
+  }
+
+  .navbar__menu.open {
+    display: block;
   }
 
   .navbar__toggle-btn {
