@@ -37,17 +37,38 @@ document.addEventListener('scroll', () => {
 });
 
 // Show "arrow up" button when scrolling down
-const scrollUpButton = document.querySelector('.arrow-up');
+const arrowUpButton = document.querySelector('.arrow-up');
 document.addEventListener('scroll', () => {
-  if(window.scrollY > homeHeight / 2) {
-    scrollUpButton.classList.add('visible');
+  if (window.scrollY > homeHeight / 2) {
+    arrowUpButton.classList.add('visible');
   } else {
-    scrollUpButton.classList.remove('visible');
+    arrowUpButton.classList.remove('visible');
   }
-}
-);
-scrollUpButton.addEventListener('click', () => {
+});
+arrowUpButton.addEventListener('click', () => {
   scrollIntoView('#home');
+});
+
+// Project
+const workBtnContainer = document.querySelector('.work__categories');
+const projectsContainer = document.querySelector('.work__projects');
+const projects = document.querySelectorAll('.project');
+workBtnContainer.addEventListener('click', (e) => {
+  const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter;
+  if (filter == null) {
+    return;
+  }
+  projectsContainer.classList.add('anim-out');
+  setTimeout(() => {
+    projects.forEach((project) => {
+      if (filter === '*' || filter === project.dataset.type) {
+        project.classList.remove('invisible');
+      } else {
+        project.classList.add('invisible');
+      }
+    });
+    projectsContainer.classList.remove('anim-out');
+  }, 250);
 });
 
 
