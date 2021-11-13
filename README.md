@@ -1,1 +1,1 @@
-# Javascript Practice
+# JS Practice Website
