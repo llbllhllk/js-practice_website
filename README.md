@@ -1,2 +1,1 @@
-# portfolio
- kangbyeonghyeon's portfolio
+# Javascript Practice
